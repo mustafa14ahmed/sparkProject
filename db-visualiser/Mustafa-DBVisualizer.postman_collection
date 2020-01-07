@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "19231ac9-a611-42e9-b841-d1c5b60ec4fd",
+		"name": "Mustafa-DB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "processDatabase",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"datasetType\" : \"DB\",\n\t\"databaseType\" : \"mysql\",\n\t\"host\" : \"localhost\",\n\t\"port\" : 1236,\n\t\"username\" : \"admin\",\n\t\"password\" : \"password\",\n\t\"database\" : \"test\",\n\t\"schema\" : \"test\"\n\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8181/api/databaseExplorer/processDatabase",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"databaseExplorer",
+						"processDatabase"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
